@@ -61,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				E94E7FB220CD2198008EA2E7 /* Weather */,
+				E94E7FBF20CD2199008EA2E7 /* Info.plist */,
 				E94E7FB120CD2198008EA2E7 /* Products */,
 				52C634436636E6ADEAE4A05F /* Pods */,
 				69182E307347C15F386F3F00 /* Frameworks */,
@@ -83,7 +84,6 @@
 				E94E7FB720CD2198008EA2E7 /* Main.storyboard */,
 				E94E7FBA20CD2199008EA2E7 /* Assets.xcassets */,
 				E94E7FBC20CD2199008EA2E7 /* LaunchScreen.storyboard */,
-				E94E7FBF20CD2199008EA2E7 /* Info.plist */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -352,7 +352,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Weather/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appelegant.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -367,7 +370,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Weather/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appelegant.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
