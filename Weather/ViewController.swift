@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Weather
 //
-//  Created by Chandarong Nuon on 6/10/18.
-//  Copyright © 2018 App Elegant. All rights reserved.
+//  Created by Irtaza Ali on 12/14/21.
+//
 //
 
 import Foundation
@@ -25,10 +25,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var backgroundView: UIView!
     
     let gradientLayer = CAGradientLayer()
-    
-    let apiKey = "8c1e240150949fb7bfe0bf0503c8a20e"
-    var lat = 11.344533
-    var lon = 104.33322
+
+    let apiKey = "17461632c3e0e83a147083cba84d5e16"
+    var lati = 11.344533
+    var long = 104.33322
     var activityIndicator: NVActivityIndicatorView!
     let locationManager = CLLocationManager()
     
@@ -59,9 +59,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
-        lat = location.coordinate.latitude
-        lon = location.coordinate.longitude
-        Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(apiKey)&units=metric").responseJSON {
+        lati = location.coordinate.latitude
+        long = location.coordinate.longitude
+        Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lati=\(lati)&long=\(long)&appid=\(apiKey)&units=metric").responseJSON {
             response in
             self.activityIndicator.stopAnimating()
             if let responseStr = response.result.value {
